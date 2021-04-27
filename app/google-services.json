@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "586373169413",
+    "project_id": "trainqr-3e515",
+    "storage_bucket": "trainqr-3e515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586373169413:android:2a6b5e0854764c6157376c",
+        "android_client_info": {
+          "package_name": "com.example.trainqr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "586373169413-o4189kkknlhnc41aq9k6ba28nce0dc6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAz2KjGRpazI5eaBE2AgaZIg28kOoxo3zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "586373169413-o4189kkknlhnc41aq9k6ba28nce0dc6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

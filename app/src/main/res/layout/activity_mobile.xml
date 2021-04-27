@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MobileActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Enter Phone number"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/phoneNumber"
+        android:textAlignment="center"
+        android:layout_margin="30dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:id="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textAllCaps="false"
+        />
+</RelativeLayout>
