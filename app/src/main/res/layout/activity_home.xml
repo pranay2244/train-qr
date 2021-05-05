@@ -30,4 +30,13 @@
         android:text="Register Profile"
         android:textAllCaps="false"
         android:id="@+id/register"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:text="Click to book a ticket"
+        android:textAllCaps="false"
+        android:id="@+id/book"/>
 </RelativeLayout>

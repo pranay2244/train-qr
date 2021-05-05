@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:testOnly="false"
         android:theme="@style/Theme.TrainQR">
-        <activity android:name=".ProfileRegistrationActivity"></activity>
+        <activity android:name=".TrainActivity"></activity>
+        <activity android:name=".ProfileRegistrationActivity" />
         <activity android:name=".VerificationActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MobileActivity" />
