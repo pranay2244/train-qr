@@ -1,0 +1,317 @@
+{
+  "12360" : {
+    "Fare" : [ "550", "600", "650", "700" ],
+    "from" : "Mumbai",
+    "path" : [ "Mumbai", "Lonavla", "Nagpur", "Gwalior", "Delhi" ],
+    "time" : [ "9:00", "11:00", "13:50", "17:00", "21:20" ],
+    "timings" : "9:00 - 21:20",
+    "to" : "delhi",
+    "train_name" : "Gwalior Express"
+  },
+  "14860" : {
+    "Fare" : [ "450", "550", "600", "750" ],
+    "from" : "Mumbai",
+    "path" : [ "Mumbai", "Adilabad", "Bhubaneshwar", "Cuttack", "Kolkata" ],
+    "time" : [ "11:00", "14:00", "18:00", "19:00", "23:30" ],
+    "timings" : "11:00 - 23:30",
+    "to" : "Kolkata",
+    "train_name" : "Hugli Express"
+  },
+  "15861" : {
+    "Fare" : [ "350", "500", "550", "650" ],
+    "from" : "Mumbai",
+    "path" : [ "Mumbai", "Lonavla", "Adilabad", "Nizamabad", "Secunderabad" ],
+    "time" : [ "20:00", "22:00", "3:00", "5:00", "8:00" ],
+    "timings" : "20:00 - 8:00",
+    "to" : "Secunderabad",
+    "train_name" : "Durantho Express"
+  },
+  "18062" : {
+    "Fare" : [ "350", "500", "550", "700" ],
+    "from" : "Secunderabad",
+    "path" : [ "Secunderabad", "Vijayawada", "Bhubaneshwar", "Cuttack", "Kolkata" ],
+    "time" : [ "4:30", "7:00", "11:00", "13:00", "17:45" ],
+    "timings" : "4:30 - 17:45",
+    "to" : "Kolkata",
+    "train_name" : "Shalimar Express"
+  },
+  "19722" : {
+    "Fare" : [ "400", "450", "500", "600" ],
+    "from" : "Bhubaneshwar",
+    "path" : [ "Bhubaneshar", "Vijayawada", "Nellore", "Katpadi", "Chennai" ],
+    "time" : [ "17:00", "21:00", "23:00", "1:00", "3:00" ],
+    "timings" : "17:00 - 3:00",
+    "to" : "Chennai",
+    "train_name" : "Erode Express"
+  },
+  "23966" : {
+    "Fare" : [ "600", "700", "750", "800" ],
+    "from" : "Mumbai",
+    "path" : [ "Mumbai", "Khammam", "Nellore", "Katpadi", "Chennai" ],
+    "time" : [ "6:00", "11:00", "13:00", "15:00", "20:00" ],
+    "timings" : "6:00 - 20:00",
+    "to" : "Chennai",
+    "train_name" : "TamilNadu Express"
+  },
+  "25931" : {
+    "Fare" : [ "350", "400", "450", "600" ],
+    "from" : "Ahmedabad",
+    "path" : [ "Ahmedabad", "Anand", "Gandhinagar", "Surat", "Mumbai" ],
+    "time" : [ "15:00", "18:00", "20:00", "23:30", "2:30" ],
+    "timings" : "15:00 - 21:30",
+    "to" : "Mumbai",
+    "train_name" : "Hamsafar Express"
+  },
+  "34023" : {
+    "Fare" : [ "500", "550", "600", "700" ],
+    "from" : "Bengaluru",
+    "path" : [ "Bengaluru", "Kurnool", "Ananthapur", "Vijayawada", "Secunderabad" ],
+    "time" : [ "15:00", "17:00", "19:00", "23:00", "1:30" ],
+    "timings" : "15:00 - 1:30",
+    "to" : "Secunderabad",
+    "train_name" : "Mysore Express"
+  },
+  "34913" : {
+    "Fare" : [ "450", "500", "550", "600" ],
+    "from" : "Bengaluru",
+    "path" : [ "Bengaluru", "Kurnool", "Nellore", "Katpadi", "Chennai" ],
+    "time" : [ "8:00", "11:00", "14:00", "16:00", "20:30" ],
+    "timings" : "8:00 - 20:30",
+    "to" : "Chennai",
+    "train_name" : "Chennai Express"
+  },
+  "34963" : {
+    "Fare" : [ "450", "500", "700", "800" ],
+    "from" : "Bengaluru",
+    "path" : [ "Bengaluru", "Ananthapur", "Secunderabad", "Gwalior", "Delhi" ],
+    "time" : [ "13:00", "15:00", "19:00", "22:00", "2:00" ],
+    "timings" : "13:00 - 2:00",
+    "to" : "Delhi",
+    "train_name" : "Rajdhani Express"
+  },
+  "34987" : {
+    "Fare" : [ "350", "400", "500", "550" ],
+    "from" : "Secunderabad",
+    "path" : [ "Secunderabad", "Warangal", "Vijayawad", "Bhubaneshwar", "Cuttack" ],
+    "time" : [ "8:00", "11:00", "14:00", "19:00", "20:30" ],
+    "timings" : "8:00 - 20:30",
+    "to" : "Cuttack",
+    "train_name" : "Narsapur Express"
+  },
+  "39123" : {
+    "Fare" : [ "450", "500", "600", "650" ],
+    "from" : "Secunderabad",
+    "path" : [ "Secunderabad", "Nizamabad", "Adilabad", "Lonavla", "Mumbai" ],
+    "time" : [ "12:00", "15:00", "16:30", "23:00", "1:30" ],
+    "timings" : "12:00 - 1:30",
+    "to" : "Mumbai",
+    "train_name" : "CST Express"
+  },
+  "45678" : {
+    "Fare" : [ "350", "400", "500", "700" ],
+    "from" : "Secunderabad",
+    "path" : [ "Secunderabad", "Nizamabad", "Adilabad", "Deccan", "Kolkata" ],
+    "time" : [ "5:00", "7:00", "10:00", "15:00", "17:00" ],
+    "timings" : "5:00 - 17:00",
+    "to" : "Kolkata",
+    "train_name" : "Deccan Express"
+  },
+  "45913" : {
+    "Fare" : [ "450", "500", "550", "600" ],
+    "from" : "Chennai",
+    "path" : [ "Chennai", "Katpadi", "Nellore", "Khammam", "Secunderabad" ],
+    "time" : [ "9:00", "12:00", "14:30", "17:00", "21:00" ],
+    "timings" : "9:00 - 21:00",
+    "to" : "Secunderabad",
+    "train_name" : "Charminar Express"
+  },
+  "50211" : {
+    "Fare" : [ "500", "550", "600", "650" ],
+    "from" : "Bengaluru",
+    "path" : [ "Bengaluru", "Kurnool", "Ananthapur", "Warangal", "Secunderabad" ],
+    "time" : [ "6:00", "9:00", "11:00", "15:00", "18:30" ],
+    "timings" : "6:00 - 18:30",
+    "to" : "Secunderabad",
+    "train_name" : "Karnataka Express"
+  },
+  "50660" : {
+    "Fare" : [ "450", "550", "600", "700" ],
+    "from" : "Secunderabad",
+    "path" : [ "Secunderabad", "Warangal", "Nagpur", "Gwalior", "Delhi" ],
+    "time" : [ "5:00", "11:00", "13:50", "17:00", "20:00" ],
+    "timings" : "5:00 - 20:00",
+    "to" : "Delhi",
+    "train_name" : "AP Express"
+  },
+  "53969" : {
+    "Fare" : [ "600", "650", "750", "800" ],
+    "from" : "Kolkata",
+    "path" : [ "Kolkata", "Cuttack", "Bhubaneshwar", "Vijayawada", "Warangal" ],
+    "time" : [ "6:30", "9:00", "11:00", "13:00", "15:00" ],
+    "timings" : "6:30 - 15:00",
+    "to" : "Warangal",
+    "train_name" : "East Coast Express"
+  },
+  "54662" : {
+    "Fare" : [ "350", "400", "450", "600" ],
+    "from" : "Secunderabad",
+    "path" : [ "Secunderabad", "Khammam", "Nellore", "Katpadi", "Chennai" ],
+    "time" : [ "5:00", "11:00", "13:00", "15:00", "20:00" ],
+    "timings" : "5:00 - 20:00",
+    "to" : "Chennai",
+    "train_name" : "Venkatadri Express"
+  },
+  "56882" : {
+    "Fare" : [ "350", "500", "550", "600" ],
+    "from" : "Cuttack",
+    "path" : [ "Cuttack", "Bhubaneshwar", "Vijayawada", "Warangal", "Secunderabad" ],
+    "time" : [ "5:00", "11:00", "13:00", "15:00", "20:00" ],
+    "timings" : "5:00 - 20:00",
+    "to" : "Secunderabad",
+    "train_name" : "Sambalpur Express"
+  },
+  "58098" : {
+    "Fare" : [ "350", "400", "450", "600" ],
+    "from" : "Secunderabad",
+    "path" : [ "Secunderabad", "Vijayawada", "Bhubaneshwar", "Cuttack", "Kolkata" ],
+    "time" : [ "5:30", "7:00", "10:15", "12:00", "18:00" ],
+    "timings" : "5:30 - 18:00",
+    "to" : "Kolkata",
+    "train_name" : "EastCoast Express"
+  },
+  "58187" : {
+    "Fare" : [ "600", "650", "750", "850" ],
+    "from" : "Kolkata",
+    "path" : [ "Kolkata", "Cuttack", "Bhubaneshwar", "Vijayawada", "Secunderabad" ],
+    "time" : [ "4:00", "7:00", "10:00", "15:00", "17:00" ],
+    "timings" : "4:00 - 17:00",
+    "to" : "Secunderabad",
+    "train_name" : "Durantho Express"
+  },
+  "58324" : {
+    "Fare" : [ "350", "500", "550", "600" ],
+    "from" : "Secunderabad",
+    "path" : [ "Secunderabad", "Adilabad", "Lonavla", "Mumbai", "Surat" ],
+    "time" : [ "5:30", "7:00", "10:00", "15:00", "16:30" ],
+    "timings" : "5:30 - 16:30",
+    "to" : "Surat",
+    "train_name" : "Shanthi Express"
+  },
+  "58960" : {
+    "Fare" : [ "350", "400", "450", "600" ],
+    "from" : "Secunderabad",
+    "path" : [ "Secunderabad", "Nizamabad", "Adilabad", "Deccan", "Mumbai" ],
+    "time" : [ "5:00", "7:00", "10:00", "15:00", "17:00" ],
+    "timings" : "5:00 - 17:00",
+    "to" : "Mumbai",
+    "train_name" : "Deccan Express"
+  },
+  "58961" : {
+    "Fare" : [ "400", "450", "500", "550" ],
+    "from" : "Mumbai",
+    "path" : [ "Mumbai", "Surat", "Gandhinagar", "Anand", "Ahmedabad" ],
+    "time" : [ "5:00", "7:00", "10:00", "15:00", "17:00" ],
+    "timings" : "5:00 - 17:00",
+    "to" : "Ahmedabad",
+    "train_name" : "Rajkot Express"
+  },
+  "59234" : {
+    "Fare" : [ "500", "600", "700", "800" ],
+    "from" : "Delhi",
+    "path" : [ "Delhi", "Nagpur", "Warangal", "Cuttack", "Kolkata" ],
+    "time" : [ "1:00", "4:00", "10:00", "13:00", "18:00" ],
+    "timings" : "1:00 - 18:30",
+    "to" : "Kolkata",
+    "train_name" : "Radhikapur Express"
+  },
+  "65478" : {
+    "Fare" : [ "500", "600", "650", "700" ],
+    "from" : "Bengaluru",
+    "path" : [ "Bengaluru", "Kurnool", "Lonavla", "Mumbai", "Surat" ],
+    "time" : [ "10:00", "13:00", "19:00", "21:00", "22:30" ],
+    "timings" : "10:00 - 22:30",
+    "to" : "Surat",
+    "train_name" : "Rajdhani Express"
+  },
+  "71025" : {
+    "Fare" : [ "450", "500", "550", "750" ],
+    "from" : "Chennai",
+    "path" : [ "Chennai", "Katpadi", "Nellore", "Kurnool", "Bengaluru" ],
+    "time" : [ "7:30", "9:00", "12:00", "14:00", "19:30" ],
+    "timings" : "7:30 - 19:30",
+    "to" : "Bengaluru",
+    "train_name" : "Chennai-Bengaluru Express"
+  },
+  "71860" : {
+    "Fare" : [ "450", "500", "550", "600" ],
+    "from" : "Gandhinagar",
+    "path" : [ "Gandhinagar", "Surat", "Mumbai", "Lonavla", "Adilabad" ],
+    "time" : [ "1:00", "3:00", "8:00", "9:00", "13:20" ],
+    "timings" : "1:00 - 13:20",
+    "to" : "Adilabad",
+    "train_name" : "Gujarat Express"
+  },
+  "72466" : {
+    "Fare" : [ "500", "550", "650", "750" ],
+    "from" : "Bengaluru",
+    "path" : [ "Bengaluru", "Kurnool", "Ananthapur", "Warangal", "Secunderabad" ],
+    "time" : [ "6:00", "11:00", "13:00", "15:00", "20:00" ],
+    "timings" : "6:00 - 20:00",
+    "to" : "Secunderabad",
+    "train_name" : "Brindavan Express"
+  },
+  "78926" : {
+    "Fare" : [ "500", "600", "650", "700" ],
+    "from" : "Secunderabad",
+    "path" : [ "Secunerabad", "Lonavla", "Surat", "Gandhinagar", "Anand" ],
+    "time" : [ "7:30", "13:15", "17:00", "19:00", "20:30" ],
+    "timings" : "7:30 - 20:30",
+    "to" : "Anand",
+    "train_name" : "Kanjari boriyav Express"
+  },
+  "78930" : {
+    "Fare" : [ "500", "550", "700", "800" ],
+    "from" : "Bengaluru",
+    "path" : [ "Bengaluru", "Bhubaneshwar", "Cuttack", "Shalimar", "Kolkata" ],
+    "time" : [ "4:00", "6:00", "10:00", "14:00", "18:00" ],
+    "timings" : "4:00 - 18:00",
+    "to" : "Kolkata",
+    "train_name" : "Yeshwathpur-Howrah Express"
+  },
+  "83546" : {
+    "Fare" : [ "450", "650", "750", "900" ],
+    "from" : "Chennai",
+    "path" : [ "Chennai", "Nellore", "Nagpur", "Gwalior", "Delhi" ],
+    "time" : [ "8:00", "12:30", "15:00", "19:00", "22:00" ],
+    "timings" : "8:00 - 22:00",
+    "to" : "Delhi",
+    "train_name" : "Shatabdi Express"
+  },
+  "85961" : {
+    "Fare" : [ "400", "500", "650", "800" ],
+    "from" : "Delhi",
+    "path" : [ "Delhi", "Lonavla", "Cuttack", "Kurnool", "Bengaluru" ],
+    "time" : [ "3:00", "8:00", "13:00", "17:00", "20:00" ],
+    "timings" : "3:00 - 20:00",
+    "to" : "Bengaluru",
+    "train_name" : "H Nizamuddin Express"
+  },
+  "87961" : {
+    "Fare" : [ "500", "600", "800", "900" ],
+    "from" : "Delhi",
+    "path" : [ "Delhi", "Gwalior", "Nagpur", "Warangal", "Secunderabad" ],
+    "time" : [ "13:00", "15:00", "17:00", "21:00", "23:30" ],
+    "timings" : "13:00 - 23:30",
+    "to" : "Secunderabad",
+    "train_name" : "Telangana Express"
+  },
+  "98243" : {
+    "Fare" : [ "450", "550", "700", "800" ],
+    "from" : "Chennai",
+    "path" : [ "Chennai", "Katpadi", "Nizamabad", "Lonavla", "Mumbai" ],
+    "time" : [ "4:00", "6:00", "10:00", "14:00", "18:00" ],
+    "timings" : "4:00 - 18:00",
+    "to" : "Mumbai",
+    "train_name" : "Garibrath Express"
+  }
+}

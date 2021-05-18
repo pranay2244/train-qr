@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="#BC8F8F"
+    android:gravity="bottom">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_train_24"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="70dp"
+        android:padding="20dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:layout_marginTop="175dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
