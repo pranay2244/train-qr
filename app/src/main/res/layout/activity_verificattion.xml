@@ -1,35 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".VerificationActivity">
+
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/otp"
         android:id="@+id/numberText"
-        android:textColor="#fff"
-        android:textSize="20sp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:maxLength="6"
-        android:layout_centerInParent="true"
-        android:hint="Enter OTP"
-        android:textAlignment="center"
-        android:textColor="#fff"
-        android:layout_margin="30dp"
-        android:id="@+id/otp"
-        />
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/otp"
+        android:text="Enter OTP"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="50dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="35sp"/>
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:maxLength="6"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="50dp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validate"
+        android:layout_marginTop="450dp"
         android:layout_centerHorizontal="true"
-        android:text="Login"
-        android:textAllCaps="false"
-        android:id="@+id/login"/>
+        android:background="@drawable/roundedcor"/>
+
+
 </RelativeLayout>

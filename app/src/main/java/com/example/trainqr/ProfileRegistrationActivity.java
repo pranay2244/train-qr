@@ -1,20 +1,18 @@
 package com.example.trainqr;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.trainqr.models.UserModel;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,7 +25,7 @@ import java.util.regex.Pattern;
 
 public class ProfileRegistrationActivity extends AppCompatActivity {
 
-    EditText name, email, age, address;
+    TextInputEditText name, email, age, address;
     Button update;
     RadioGroup gender;
     FirebaseAuth firebaseAuth;

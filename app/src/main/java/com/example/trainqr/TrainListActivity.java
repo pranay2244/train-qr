@@ -63,7 +63,16 @@ public class TrainListActivity extends AppCompatActivity {
         hm = new Gson().fromJson(s,HashMap.class);
         MyAdapter adapter = new MyAdapter(this, tName, price, time, seats);
         listView.setAdapter(adapter);
-        listView.setOnItemClickListener((adapterView, view, i, l) -> Toast.makeText(TrainListActivity.this, alModel.get(i).getTrain_name(),Toast.LENGTH_SHORT).show());
+        listView.setOnItemClickListener((adapterView, view, i, l) -> {
+            Intent intent1 = new Intent(TrainListActivity.this, DetailsActivity.class);
+            intent1.putExtra("name",alModel.get(i).getTrain_name());
+            intent1.putExtra("number",alModel.get(i).getTrain_id());
+            intent1.putExtra("seats",alTrainSeat.get(i).toString());
+            intent1.putExtra("timings",alModel.get(i).getTimings());
+            intent1.putExtra("price",alModel.get(i).getFare().get(0));
+            intent1.putExtra("date",date);
+            startActivity(intent1);
+        });
     }
 
     public void findTrainId() {

@@ -4,16 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TrainActivity"
-    android:id="@+id/rel"
-    android:background="#000">
+    tools:context=".TicketActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hello"
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
         android:layout_centerInParent="true"
-        android:textSize="20sp"
-        android:textColor="#fff"/>
-
+        android:contentDescription="Image"
+        android:id="@+id/qr"/>
 </RelativeLayout>

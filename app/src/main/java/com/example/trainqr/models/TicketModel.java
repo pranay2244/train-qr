@@ -4,13 +4,30 @@ import java.util.List;
 
 public class TicketModel {
     private List<String> passengers;
+    private List<String> age;
     private String train_no;
     private String price;
     private String train_name;
     private String timings;
     private String date;
     private List<String> seats;
+    private List<String> gender;
 
+    public List<String> getGender() {
+        return gender;
+    }
+
+    public void setGender(List<String> gender) {
+        this.gender = gender;
+    }
+
+    public List<String> getAge() {
+        return age;
+    }
+
+    public void setAge(List<String> age) {
+        this.age = age;
+    }
     public List<String> getPassengers() {
         return passengers;
     }

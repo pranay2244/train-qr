@@ -118,35 +118,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         startActivity(intent);
     }
 
-//    private void getData(DatabaseReference databaseReference) {
-//        databaseReference.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                 for(DataSnapshot dataSnapshot:snapshot.getChildren())
-//                 {
-//                     String key = dataSnapshot.getKey();
-//                     try {
-//                         TrainModel model = dataSnapshot.getValue(TrainModel.class);
-//                         model.setTrain_id(key);
-//                         al.add(model);
-//                     }
-//                     catch(Exception e) {
-//                         Toast.makeText(HomeActivity.this, e.getMessage(),Toast.LENGTH_SHORT).show();
-//                     }
-//                 }
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
-//        findViewById(R.id.select_train).setOnClickListener(view -> {
-//            startActivity(new Intent(HomeActivity.this, SelectActivity.class));
-//        });
-//    }
-
-
     @Override
     public void onBackPressed() {
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
@@ -170,6 +141,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             Intent intent = new Intent(HomeActivity.this,MainActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
+        }
+        if(id==R.id.myItem3){
+            startActivity(new Intent(HomeActivity.this,TicketActivity.class));
         }
         return false;
     }
