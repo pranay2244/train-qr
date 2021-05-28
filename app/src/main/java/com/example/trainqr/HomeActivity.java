@@ -101,8 +101,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     private void showDate(int dat, int month, int year) {
         month++;
         String stringE;
-        if(month<10)
+        if(dat<10&&month<10)
+            stringE = "0" + dat + " " + "0" + month + " " +year;
+        else if(month<10)
             stringE = dat + " " + "0" + month + " " +year;
+        else if(day<10)
+            stringE = "0"+dat + " " + month + " " +year;
         else
             stringE = dat + " " + month + " " +year;
         selectDate.setText(stringE);
@@ -142,7 +146,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
         }
-        if(id==R.id.myItem3){
+        if(id==R.id.ticket){
             startActivity(new Intent(HomeActivity.this,TicketActivity.class));
         }
         return false;

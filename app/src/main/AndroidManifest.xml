@@ -11,10 +11,11 @@
         android:supportsRtl="true"
         android:testOnly="false"
         android:theme="@style/Theme.TrainQR">
-        <activity android:name=".TicketActivity"></activity>
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".TicketDetailsActivity" />
+        <activity android:name=".TicketActivity" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".TrainListActivity" />
-        <activity android:name=".SelectActivity" />
         <activity android:name=".ProfileRegistrationActivity" />
         <activity android:name=".VerificationActivity" />
         <activity android:name=".HomeActivity" />

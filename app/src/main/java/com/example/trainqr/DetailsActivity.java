@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.trainqr.models.TicketModel;
 import com.example.trainqr.models.UserModel;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -78,6 +80,7 @@ public class DetailsActivity extends AppCompatActivity {
         });
         Button confirm = findViewById(R.id.confirm);
         confirm.setOnClickListener(view -> {
+            confirm.setEnabled(false);
             getData();
         });
     }
@@ -105,6 +108,11 @@ public class DetailsActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 user[0] = snapshot.getValue(UserModel.class);
+                if(user[0]==null)
+                {
+                    Intent intent = new Intent(DetailsActivity.this,ProfileRegistrationActivity.class);
+                    startActivity(intent);
+                }
                 bookTicket(user[0]);
             }
 
@@ -138,13 +146,16 @@ public class DetailsActivity extends AppCompatActivity {
             al = new ArrayList<>();
         al.add(key);
         userModel.setCurrent(al);
-        databaseReference.child("users").child(firebaseAuth.getCurrentUser().getPhoneNumber()).setValue(userModel);
-        Toast.makeText(this, "Ticket booked successfully", Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "PNR: "+key , Toast.LENGTH_SHORT).show();
-        updateSeats(intSeats);
+        databaseReference.child("users").child(firebaseAuth.getCurrentUser().getPhoneNumber()).setValue(userModel)
+                .addOnFailureListener(e -> findViewById(R.id.confirm).setEnabled(true));
+        updateSeats(intSeats,key,totalPrice);
     }
 
-    private void updateSeats(int seats) {
+    private void updateSeats(int seats,String key,int totalPrice) {
         databaseReference.child("days").child(date).child(trainNo).setValue(seats);
+        Intent intent = new Intent(DetailsActivity.this,PaymentActivity.class);
+        intent.putExtra("pnr",key);
+        intent.putExtra("price",totalPrice);
+        startActivity(intent);
     }
 }
