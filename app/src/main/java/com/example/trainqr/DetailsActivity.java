@@ -28,6 +28,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class DetailsActivity extends AppCompatActivity {
     CardView[] card;
@@ -145,6 +147,7 @@ public class DetailsActivity extends AppCompatActivity {
         if(al==null)
             al = new ArrayList<>();
         al.add(key);
+        al = al.stream().filter(Objects::nonNull).collect(Collectors.toList());
         userModel.setCurrent(al);
         databaseReference.child("users").child(firebaseAuth.getCurrentUser().getPhoneNumber()).setValue(userModel)
                 .addOnFailureListener(e -> findViewById(R.id.confirm).setEnabled(true));

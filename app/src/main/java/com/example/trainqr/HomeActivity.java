@@ -27,7 +27,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
-    ArrayList<TrainModel> al;
     FirebaseAuth firebaseAuth;
     Button search;
     TextInputEditText from, to , selectDate;
@@ -59,13 +58,6 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         firebaseAuth =  FirebaseAuth.getInstance();
         selectDate.setOnClickListener(view -> initDate());
         search.setOnClickListener(view -> searchTrain());
-
-//        al = new ArrayList<>();
-//        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("train").child("Friday");
-//        getData(databaseReference);
-//        findViewById(R.id.book).setOnClickListener(view -> {
-//            startActivity(new Intent(HomeActivity.this, TrainActivity.class));
-//        });
     }
 
     private void initDate() {

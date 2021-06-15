@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.trainqr.adapter.MyTicketAdapter;
 import com.example.trainqr.models.TicketModel;
@@ -16,7 +17,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.Arrays;
 import java.util.List;
 
 
@@ -53,41 +53,38 @@ public class TicketActivity extends AppCompatActivity {
 
     private void getTicketData() {
         List<String> current = user.getCurrent();
-        int size = current.size();
-        tName = new String[size];
-        date = new String[size];
-        PNR = new String[size];
-        time = new String[size];
-        int n=0;
-        for(String s:current){
-            if(s==null) {
-                n++;
-                continue;
+        if(current!=null)
+        {
+            int size = current.size();
+            tName = new String[size];
+            date = new String[size];
+            PNR = new String[size];
+            time = new String[size];
+            for(String s:current){
+                db.child("tickets").child(s).addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        TicketModel model = snapshot.getValue(TicketModel.class);
+                        tName[i] = model.getTrain_name();
+                        date[i] = model.getDate();
+                        PNR[i] = s;
+                        time[i] = model.getTimings();
+                        i++;
+                        MyTicketAdapter ticketAdapter = new MyTicketAdapter(TicketActivity.this,tName,date,PNR,time);
+                        lv.setAdapter(ticketAdapter);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
             }
-            int finalN = n;
-            db.child("tickets").child(s).addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    TicketModel model = snapshot.getValue(TicketModel.class);
-                    tName[i] = model.getTrain_name();
-                    date[i] = model.getDate();
-                    PNR[i] = s;
-                    time[i] = model.getTimings();
-                    i++;
-                    MyTicketAdapter ticketAdapter = new MyTicketAdapter(TicketActivity.this,
-                            Arrays.copyOfRange(tName,0,size- finalN ),
-                            Arrays.copyOfRange(date,0,size- finalN ),
-                            Arrays.copyOfRange(PNR,0,size- finalN ),
-                            Arrays.copyOfRange(time,0,size- finalN )
-                    );
-                    lv.setAdapter(ticketAdapter);
-                }
-
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
-
-                }
-            });
+        }
+        else{
+            String[] temp = {"No bookings done!"};
+            MyTicketAdapter ticketAdapter = new MyTicketAdapter(TicketActivity.this,temp,date,PNR,time);
+            lv.setAdapter(ticketAdapter);
         }
     }
 
@@ -96,6 +93,11 @@ public class TicketActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 user = snapshot.getValue(UserModel.class);
+                if(user==null){
+                    Intent intent = new Intent(TicketActivity.this,ProfileRegistrationActivity.class);
+                    Toast.makeText(TicketActivity.this, "Complete Profile Registration ", Toast.LENGTH_SHORT).show();
+                    startActivity(intent);
+                }
                 getTicketData();
             }
 

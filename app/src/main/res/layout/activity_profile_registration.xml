@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".ProfileRegistrationActivity"
     android:background="@drawable/profile_bg">
     <RelativeLayout
@@ -58,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="55dp"
                 android:id="@+id/age"
-                android:hint="DOB"
+                android:hint="Age"
                 android:layout_marginTop="300dp"
                 android:inputType="date"
                 android:text=""/>
@@ -159,3 +163,4 @@
             />
     </RelativeLayout>
 </RelativeLayout>
+</ScrollView>
